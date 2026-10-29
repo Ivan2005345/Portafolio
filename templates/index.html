@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Jhorman Ivan Uscategui Rico, estudiante de Ingeniería de Sistemas.">
+    <title>Jhorman Uscategui | Portafolio</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-docs="{{ url_for('static', filename='docs/') }}">
+
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============ PORTADA ============ -->
+    <section class="portada" id="inicio">
+        <div class="portada-contenido">
+            <div class="portada-avatar" aria-hidden="true">JU</div>
+            <p class="etiqueta">Portafolio personal</p>
+            <h1>Jhorman Ivan Uscategui Rico</h1>
+            <p class="portada-rol">Estudiante de Ingeniería de Sistemas</p>
+            <p class="portada-texto">
+                Responsable, puntual y con muchas ganas de aprender.
+                Aquí encontrarás mi formación, mis certificados y mis habilidades.
+            </p>
+            <a class="boton" href="#explorar">Explorar el sitio</a>
+        </div>
+    </section>
+
+    <main class="contenedor" id="contenido">
+
+        <!-- ============ 01 · EXPLORA ============ -->
+        <section class="seccion" id="explorar" aria-labelledby="t-explorar">
+            <header class="seccion-cabecera revelar">
+                <span class="numero" aria-hidden="true">01</span>
+                <div>
+                    <h2 id="t-explorar">Explora mi portafolio</h2>
+                    <p>Pulsa una tarjeta para ver la información completa.</p>
+                </div>
+            </header>
+
+            <div class="rejilla revelar">
+
+                <button class="tarjeta" type="button" data-seccion="sobre-mi">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                    <h3>Sobre mí</h3>
+                    <p>Quién soy y qué me caracteriza.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-seccion="formacion">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </span>
+                    <h3>Formación académica</h3>
+                    <p>Mi recorrido de estudios hasta hoy.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-seccion="certificados">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </span>
+                    <h3>Certificados</h3>
+                    <p>Cursos y diplomas obtenidos.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-seccion="habilidades">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </span>
+                    <h3>Habilidades</h3>
+                    <p>Lo que sé hacer y cómo trabajo.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-seccion="proyectos">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    </span>
+                    <h3>Proyectos</h3>
+                    <p>Trabajos universitarios y personales.</p>
+                </button>
+
+                <button class="tarjeta" type="button" data-seccion="contacto">
+                    <span class="icono">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </span>
+                    <h3>Contacto</h3>
+                    <p>Cómo comunicarte conmigo.</p>
+                </button>
+
+            </div>
+        </section>
+
+        <div class="divisor" aria-hidden="true"></div>
+
+        <!-- ============ 02 · INSIGNIAS ============ -->
+        <section class="seccion" id="logros" aria-labelledby="t-logros">
+            <header class="seccion-cabecera revelar">
+                <span class="numero" aria-hidden="true">02</span>
+                <div>
+                    <h2 id="t-logros">Insignias y logros</h2>
+                    <p>Mi formación, certificados y proyectos, separados por categoría.</p>
+                </div>
+            </header>
+
+            <div class="revelar">
+
+                <h3 class="grupo-titulo"><span class="punto-tipo tipo-certificado"></span>Certificados obtenidos</h3>
+                <div class="insignias">
+
+                    <button type="button" class="insignia tipo-certificado" data-seccion="insignia-ciberseguridad">
+                        <span class="insignia-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        <span class="insignia-titulo">Fundamentos de la Ciberseguridad</span>
+                        <span class="insignia-meta">Google · Coursera</span>
+                        <span class="insignia-meta">Junio de 2025</span>
+                    </button>
+
+                    <button type="button" class="insignia tipo-certificado" data-seccion="insignia-bachiller">
+                        <span class="insignia-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+                        </span>
+                        <span class="insignia-titulo">Bachiller Académico</span>
+                        <span class="insignia-meta">Colegio Club de Leones</span>
+                        <span class="insignia-meta">Noviembre de 2022</span>
+                    </button>
+
+                </div>
+
+                <h3 class="grupo-titulo"><span class="punto-tipo tipo-proyecto"></span>Proyectos completados</h3>
+                <div class="insignias">
+                    <div class="insignia-vacia">Aún no hay proyectos completados. Próximamente.</div>
+                    <!--
+                    PARA AÑADIR UNA INSIGNIA DE PROYECTO (cuando tengas uno real):
+                    1) Reemplaza el <div class="insignia-vacia"> de arriba por este botón.
+                    2) Crea un <template id="insignia-miproyecto" data-titulo="..."> más abajo.
+
+                    <button type="button" class="insignia tipo-proyecto" data-seccion="insignia-miproyecto">
+                        <span class="insignia-icono">(svg)</span>
+                        <span class="insignia-titulo">Nombre del proyecto</span>
+                        <span class="insignia-meta">Tecnologías</span>
+                    </button>
+                    -->
+                </div>
+
+                <h3 class="grupo-titulo"><span class="punto-tipo tipo-progreso"></span>En progreso</h3>
+                <div class="insignias">
+
+                    <button type="button" class="insignia tipo-progreso" data-seccion="insignia-carrera">
+                        <span class="insignia-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </span>
+                        <span class="insignia-titulo">Ingeniería de Sistemas</span>
+                        <span class="insignia-meta">Universidad de Pamplona</span>
+                        <span class="insignia-estado">Semestre VII · en curso</span>
+                    </button>
+
+                    <button type="button" class="insignia tipo-progreso" data-seccion="insignia-portafolio">
+                        <span class="insignia-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </span>
+                        <span class="insignia-titulo">Este portafolio web</span>
+                        <span class="insignia-meta">Python · Flask · HTML · CSS · JS</span>
+                        <span class="insignia-estado">En construcción</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor" aria-hidden="true"></div>
+
+        <!-- ============ 03 · INTERESES ============ -->
+        <section class="seccion" id="intereses" aria-labelledby="t-intereses">
+            <header class="seccion-cabecera revelar">
+                <span class="numero" aria-hidden="true">03</span>
+                <div>
+                    <h2 id="t-intereses">Explora mis intereses</h2>
+                    <p>Elige un área para ver qué me interesa y qué estoy aprendiendo.</p>
+                </div>
+            </header>
+
+            <div class="revelar">
+                <div class="intereses-selector" role="group" aria-label="Áreas de interés">
+
+                    <button type="button" class="interes" data-interes="interes-software" aria-pressed="false">
+                        <span class="icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </span>
+                        <span class="interes-titulo">Desarrollo de software</span>
+                        <span class="interes-desc">Cómo se construye un programa.</span>
+                    </button>
+
+                    <button type="button" class="interes" data-interes="interes-datos" aria-pressed="false">
+                        <span class="icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </span>
+                        <span class="interes-titulo">Bases de datos</span>
+                        <span class="interes-desc">Cómo se organiza la información.</span>
+                    </button>
+
+                    <button type="button" class="interes" data-interes="interes-seguridad" aria-pressed="false">
+                        <span class="icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        <span class="interes-titulo">Ciberseguridad</span>
+                        <span class="interes-desc">Cómo proteger sistemas y datos.</span>
+                    </button>
+
+                </div>
+
+                <div class="interes-panel" id="interes-panel" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <div class="divisor" aria-hidden="true"></div>
+
+        <!-- ============ 04 · IDENTIDAD DIGITAL ============ -->
+        <section class="seccion" id="identidad" aria-labelledby="t-identidad">
+            <header class="seccion-cabecera revelar">
+                <span class="numero" aria-hidden="true">04</span>
+                <div>
+                    <h2 id="t-identidad">Tarjeta de identidad digital</h2>
+                    <p>Una presentación breve que puedes descargar como imagen.</p>
+                </div>
+            </header>
+
+            <div class="revelar">
+                <article class="id-card" aria-label="Tarjeta de identidad digital">
+                    <div class="id-principal">
+                        <div class="id-avatar" id="id-iniciales">JU</div>
+                        <p class="id-etiqueta">Identidad digital</p>
+                        <h3 id="id-nombre">Jhorman Ivan Uscategui Rico</h3>
+                        <p class="id-carrera" id="id-carrera">Ingeniería de Sistemas</p>
+
+                        <ul class="id-datos">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+                                <span id="id-universidad">Universidad de Pamplona</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span id="id-ubicacion">Cúcuta, Norte de Santander, Colombia</span>
+                            </li>
+                        </ul>
+
+                        <ul class="id-intereses" id="id-intereses">
+                            <li>Desarrollo de software</li>
+                            <li>Bases de datos</li>
+                            <li>Ciberseguridad</li>
+                        </ul>
+                    </div>
+
+                    <div class="id-qr">
+                        {% if qr_activo %}
+                            <img id="id-qr-img" src="{{ url_for('qr') }}" alt="Código QR que lleva a mi portafolio" width="150" height="150">
+                            <small>Escanea para visitar mi portafolio</small>
+                        {% else %}
+                            <div class="id-qr-vacio">Código QR disponible al publicar el sitio</div>
+                        {% endif %}
+                    </div>
+                </article>
+
+                <div class="id-acciones">
+                    <button type="button" class="boton" id="descargar-tarjeta">Descargar tarjeta (PNG)</button>
+                    <p class="nota" id="id-nota" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor" aria-hidden="true"></div>
+
+        <!-- ============ 05 · HOJA DE VIDA ============ -->
+        <section class="seccion" id="cv" aria-labelledby="t-cv">
+            <header class="seccion-cabecera revelar">
+                <span class="numero" aria-hidden="true">05</span>
+                <div>
+                    <h2 id="t-cv">Hoja de vida</h2>
+                    <p>Consúltala aquí o descarga el PDF original.</p>
+                </div>
+            </header>
+
+            <div class="cv-caja revelar">
+                {% if cv_disponible %}
+                    <div class="cv-acciones">
+                        <button type="button" class="boton" data-seccion="cv-vista">Ver hoja de vida</button>
+                        <a class="boton boton-secundario"
+                           href="{{ url_for('static', filename='docs/' + archivo_cv) }}"
+                           download="Hoja-de-vida-Jhorman-Uscategui.pdf">Descargar PDF</a>
+                    </div>
+                {% else %}
+                    <!-- El PDF aún no está: guárdalo como static/docs/hoja-de-vida.pdf y recarga -->
+                    <div class="cv-acciones">
+                        <button type="button" class="boton" disabled>Ver hoja de vida</button>
+                        <button type="button" class="boton boton-secundario" disabled>Descargar PDF</button>
+                    </div>
+                    <p class="nota">Mi hoja de vida estará disponible próximamente.</p>
+                {% endif %}
+            </div>
+        </section>
+
+        <footer class="pie">
+            <p>© 2026 Jhorman Ivan Uscategui Rico · Hecho con Python y Flask</p>
+        </footer>
+
+    </main>
+
+
+    <!-- ============================================================
+         CONTENIDO DE LAS VENTANAS MODALES
+         Cada <template> tiene un id que coincide con data-seccion
+         ============================================================ -->
+
+    <template id="sobre-mi" data-titulo="Sobre mí">
+        <p class="texto-principal">
+            Soy una persona responsable, puntual y comprometida con mis actividades.
+            Me caracterizo por el respeto, la honestidad, la cooperación, la adaptabilidad
+            y la disposición para aprender. Actualmente estudio Ingeniería de Sistemas y
+            busco continuar fortaleciendo mis conocimientos y habilidades para crecer
+            personal y profesionalmente.
+        </p>
+        <ul class="datos">
+            <li><strong>Carrera:</strong> Ingeniería de Sistemas</li>
+            <li><strong>Universidad:</strong> Universidad de Pamplona</li>
+            <li><strong>Ubicación:</strong> Cúcuta, Norte de Santander, Colombia</li>
+        </ul>
+    </template>
+
+    <template id="formacion" data-titulo="Formación académica">
+        <ol class="linea-tiempo">
+            <li>
+                <span class="punto"></span>
+                <h3>Educación primaria</h3>
+                <p>Escuela Club de Leones, sede Santa Ana</p>
+                <p class="detalle">Santa Ana, Norte de Santander · 2016</p>
+            </li>
+            <li>
+                <span class="punto"></span>
+                <h3>Educación secundaria</h3>
+                <p>Colegio Club de Leones, sede Boconó</p>
+                <p class="detalle">Boconó, Norte de Santander · 2022</p>
+                <p class="detalle">Título: Bachiller Académico</p>
+            </li>
+            <li>
+                <span class="punto"></span>
+                <h3>Formación complementaria</h3>
+                <p>Fundamentos de la Ciberseguridad</p>
+                <p class="detalle">Google · Coursera · Junio de 2025</p>
+                <p class="detalle">Certificado de finalización</p>
+            </li>
+            <li>
+                <span class="punto activo"></span>
+                <h3>Educación universitaria</h3>
+                <p>Universidad de Pamplona</p>
+                <p class="detalle">Villa del Rosario, Norte de Santander</p>
+                <p class="detalle">Ingeniería de Sistemas · Semestre VII</p>
+                <p class="estado">Actualmente en curso</p>
+            </li>
+        </ol>
+    </template>
+
+    <template id="certificados" data-titulo="Certificados">
+        <div class="certificado">
+            <h3>Fundamentos de la Ciberseguridad</h3>
+            <p>Google · Coursera</p>
+            <p class="detalle">Finalización: junio de 2025</p>
+            <!-- data-archivo: nombre del archivo dentro de static/docs/ -->
+            <button type="button" class="boton" data-archivo="certificado.jpeg">
+                Ver certificado
+            </button>
+        </div>
+
+        <div class="certificado">
+            <h3>Certificado de Bachiller</h3>
+            <p>Colegio Club de Leones</p>
+            <p class="detalle">Finalización: noviembre de 2022</p>
+            <button type="button" class="boton" data-archivo="certificado_colegio.jpeg">
+                Ver certificado
+            </button>
+        </div>
+    </template>
+
+    <template id="habilidades" data-titulo="Habilidades">
+        <h3 class="subtitulo-seccion">Habilidades técnicas</h3>
+        <ul class="etiquetas">
+            <li>Atención al cliente</li>
+            <li>Herramientas ofimáticas (nivel básico)</li>
+            <li>Organización y clasificación de información</li>
+            <li>Seguir instrucciones y procedimientos</li>
+            <li>Facilidad para aprender nuevas tareas</li>
+            <li>Responsabilidad en las actividades asignadas</li>
+            <li>Programación y bases de datos (nivel introductorio)</li>
+        </ul>
+
+        <h3 class="subtitulo-seccion">Habilidades personales</h3>
+        <ul class="etiquetas">
+            <li>Respeto</li>
+            <li>Puntualidad</li>
+            <li>Responsabilidad</li>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación efectiva</li>
+            <li>Adaptabilidad</li>
+            <li>Proactividad</li>
+            <li>Disposición para aprender</li>
+            <li>Honestidad</li>
+            <li>Atención al detalle</li>
+        </ul>
+    </template>
+
+    <template id="proyectos" data-titulo="Proyectos">
+        <p class="vacio">Próximamente, nuevos proyectos</p>
+
+        <!--
+        PLANTILLA PARA AÑADIR UN PROYECTO REAL.
+        Quita las marcas de comentario cuando tengas uno:
+
+        <article class="proyecto">
+            <h3>Nombre del proyecto</h3>
+            <p>Descripción breve.</p>
+            <ul class="etiquetas">
+                <li>Python</li>
+            </ul>
+            <a class="boton" href="https://github.com/..." target="_blank" rel="noopener">Ver repositorio</a>
+        </article>
+        -->
+    </template>
+
+    <template id="contacto" data-titulo="Contacto">
+        <ul class="datos">
+            <li><strong>Correo:</strong> <a href="mailto:jhormanrico14@gmail.com">jhormanrico14@gmail.com</a></li>
+            <li><strong>Ubicación:</strong> Cúcuta, Norte de Santander, Colombia</li>
+            <li><strong>GitHub:</strong> <span class="pendiente">Pendiente de añadir</span></li>
+            <li><strong>LinkedIn:</strong> <span class="pendiente">Pendiente de añadir</span></li>
+        </ul>
+        <a class="boton" href="mailto:jhormanrico14@gmail.com">Escribirme un correo</a>
+    </template>
+
+    <!-- ---------- Insignias ---------- -->
+
+    <template id="insignia-ciberseguridad" data-titulo="Fundamentos de la Ciberseguridad">
+        <div class="certificado">
+            <p class="texto-principal">
+                Curso de formación complementaria sobre los fundamentos de la ciberseguridad.
+            </p>
+            <ul class="datos">
+                <li><strong>Tipo:</strong> Certificado obtenido</li>
+                <!-- Confirma la entidad exacta que aparece en tu certificado original -->
+                <li><strong>Entidad:</strong> Google · Coursera</li>
+                <li><strong>Finalización:</strong> junio de 2025</li>
+            </ul>
+            <button type="button" class="boton" data-archivo="certificado.jpeg">Ver certificado</button>
+        </div>
+    </template>
+
+    <template id="insignia-bachiller" data-titulo="Bachiller Académico">
+        <div class="certificado">
+            <ul class="datos">
+                <li><strong>Tipo:</strong> Título de educación secundaria</li>
+                <li><strong>Institución:</strong> Colegio Club de Leones, sede Boconó</li>
+                <li><strong>Finalización:</strong> noviembre de 2022</li>
+            </ul>
+            <button type="button" class="boton" data-archivo="certificado_colegio.jpeg">Ver certificado</button>
+        </div>
+    </template>
+
+    <template id="insignia-carrera" data-titulo="Ingeniería de Sistemas">
+        <p class="estado">En progreso</p>
+        <ul class="datos">
+            <li><strong>Universidad:</strong> Universidad de Pamplona</li>
+            <li><strong>Sede:</strong> Villa del Rosario, Norte de Santander</li>
+            <li><strong>Semestre actual:</strong> VII</li>
+        </ul>
+        <p class="nota">Este objetivo todavía no está completado.</p>
+    </template>
+
+    <template id="insignia-portafolio" data-titulo="Este portafolio web">
+        <p class="estado">En progreso</p>
+        <p class="texto-principal">
+            Sitio personal que estoy construyendo para presentar mi formación,
+            mis certificados y mis habilidades.
+        </p>
+        <ul class="etiquetas">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </template>
+
+    <!-- ---------- Intereses ---------- -->
+
+    <template id="interes-software">
+        <h3>Desarrollo de software</h3>
+        <p>
+            Me interesa entender cómo se construye un programa de principio a fin:
+            la lógica, la estructura del código y la forma en que se conectan sus partes.
+            Estoy en una etapa de aprendizaje y práctica.
+        </p>
+        <h4>Lo que estoy aprendiendo</h4>
+        <ul class="etiquetas">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML, CSS y JavaScript</li>
+            <li>Lógica de programación</li>
+        </ul>
+        <h4>Ideas de proyectos que podría desarrollar</h4>
+        <ul class="lista-simple">
+            <li>Una aplicación web sencilla para organizar tareas.</li>
+            <li>Un programa de consola para llevar un inventario.</li>
+        </ul>
+        <h4>Mis proyectos relacionados</h4>
+        <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
+        <!-- Cuando tengas uno real, reemplaza la línea anterior por:
+             <ul class="lista-simple"><li><a href="https://github.com/...">Nombre</a></li></ul> -->
+    </template>
+
+    <template id="interes-datos">
+        <h3>Bases de datos</h3>
+        <p>
+            Me interesa cómo se organiza, se guarda y se consulta la información
+            para que un sistema pueda usarla de forma ordenada y confiable.
+            Mis conocimientos son introductorios.
+        </p>
+        <h4>Lo que estoy aprendiendo</h4>
+        <ul class="etiquetas">
+            <li>Modelo relacional</li>
+            <li>Diseño de tablas</li>
+            <li>Consultas básicas en SQL</li>
+        </ul>
+        <h4>Ideas de proyectos que podría desarrollar</h4>
+        <ul class="lista-simple">
+            <li>La base de datos de una biblioteca pequeña.</li>
+            <li>Un registro de inventario con consultas básicas.</li>
+        </ul>
+        <h4>Mis proyectos relacionados</h4>
+        <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
+    </template>
+
+    <template id="interes-seguridad">
+        <h3>Ciberseguridad</h3>
+        <p>
+            Me interesa aprender cómo proteger la información y los sistemas.
+            Completé el curso Fundamentos de la Ciberseguridad y quiero seguir
+            profundizando poco a poco.
+        </p>
+        <h4>Lo que estoy aprendiendo</h4>
+        <ul class="etiquetas">
+            <li>Conceptos básicos de seguridad</li>
+            <li>Buenas prácticas con contraseñas</li>
+            <li>Amenazas y riesgos comunes</li>
+        </ul>
+        <h4>Ideas de proyectos que podría desarrollar</h4>
+        <ul class="lista-simple">
+            <li>Una guía de buenas prácticas de seguridad para usuarios.</li>
+            <li>Una herramienta sencilla para revisar la fortaleza de contraseñas.</li>
+        </ul>
+        <h4>Mis proyectos relacionados</h4>
+        <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
+    </template>
+
+    <!-- ---------- Hoja de vida (solo si el PDF existe) ---------- -->
+    {% if cv_disponible %}
+    <template id="cv-vista" data-titulo="Hoja de vida">
+        <div class="visor">
+            <iframe src="{{ url_for('static', filename='docs/' + archivo_cv) }}" title="Vista previa de la hoja de vida"></iframe>
+        </div>
+        <p class="nota">Si no se ve bien en tu dispositivo, ábrela en una pestaña nueva.</p>
+        <a class="boton" href="{{ url_for('static', filename='docs/' + archivo_cv) }}" target="_blank" rel="noopener">Abrir en una pestaña nueva</a>
+    </template>
+    {% endif %}
+
+    <!-- ============ VENTANA MODAL (la llena el JavaScript) ============ -->
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+            <div class="modal-cabecera">
+                <h2 id="modal-titulo"></h2>
+                <button type="button" class="modal-cerrar" id="modal-cerrar" aria-label="Cerrar ventana">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="modal-contenido" id="modal-contenido"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
