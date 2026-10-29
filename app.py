@@ -20,7 +20,7 @@ app = Flask(__name__)
 URL_PUBLICA = ""
 
 # Nombre del PDF de tu hoja de vida dentro de static/docs/
-ARCHIVO_CV = "hoja de vida_Jhornan Ivan Uscategui Rico.pdf"
+ARCHIVO_CV = "hoja-de-vida.pdf"
 # ----------------------------------------------------------------
 
 

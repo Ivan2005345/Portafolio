@@ -133,9 +133,9 @@
                 <div class="insignias">
                     <div class="insignia-vacia">Aún no hay proyectos completados. Próximamente.</div>
                     <!--
-                    PARA AÑADIR UNA INSIGNIA DE PROYECTO (cuando tengas uno real):
-                    1) Reemplaza el <div class="insignia-vacia"> de arriba por este botón.
-                    2) Crea un <template id="insignia-miproyecto" data-titulo="..."> más abajo.
+                    CUANDO UN PROYECTO ESTÉ TERMINADO:
+                    1) Reemplaza el <div class="insignia-vacia"> de arriba por un botón como este.
+                    2) Muévelo desde "En progreso" y cambia tipo-progreso por tipo-proyecto.
 
                     <button type="button" class="insignia tipo-proyecto" data-seccion="insignia-miproyecto">
                         <span class="insignia-icono">(svg)</span>
@@ -147,6 +147,15 @@
 
                 <h3 class="grupo-titulo"><span class="punto-tipo tipo-progreso"></span>En progreso</h3>
                 <div class="insignias">
+
+                    <button type="button" class="insignia tipo-progreso" data-seccion="insignia-controlshop">
+                        <span class="insignia-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <span class="insignia-titulo">Controlshop</span>
+                        <span class="insignia-meta">PHP · PostgreSQL · Supabase</span>
+                        <span class="insignia-estado">En progreso</span>
+                    </button>
 
                     <button type="button" class="insignia tipo-progreso" data-seccion="insignia-carrera">
                         <span class="insignia-icono">
@@ -410,21 +419,26 @@
     </template>
 
     <template id="proyectos" data-titulo="Proyectos">
-        <p class="vacio">Próximamente, nuevos proyectos</p>
-
-        <!--
-        PLANTILLA PARA AÑADIR UN PROYECTO REAL.
-        Quita las marcas de comentario cuando tengas uno:
-
         <article class="proyecto">
-            <h3>Nombre del proyecto</h3>
-            <p>Descripción breve.</p>
+            <h3>Controlshop · Sistema de inventario y ventas</h3>
+            <p class="estado">En progreso</p>
+            <p>
+                Aplicación web para la gestión de inventario, productos, usuarios y ventas
+                de un negocio. Incluye módulos para registrar productos, controlar existencias,
+                gestionar ventas y consultar reportes, con una base de datos PostgreSQL.
+            </p>
             <ul class="etiquetas">
-                <li>Python</li>
+                <li>PHP</li>
+                <li>PostgreSQL</li>
+                <li>Supabase</li>
+                <li>HTML, CSS y JavaScript</li>
+                <li>Docker y Apache</li>
+                <li>Git y GitHub</li>
+                <li>Render</li>
             </ul>
-            <a class="boton" href="https://github.com/..." target="_blank" rel="noopener">Ver repositorio</a>
+            <p class="nota">Actualmente en proceso de adaptación y despliegue en la nube: conectarlo a Supabase y publicarlo en Render.</p>
+            <a class="boton" href="https://github.com/Ivan2005345/Controlshop" target="_blank" rel="noopener">Ver repositorio</a>
         </article>
-        -->
     </template>
 
     <template id="contacto" data-titulo="Contacto">
@@ -465,6 +479,26 @@
         </div>
     </template>
 
+    <template id="insignia-controlshop" data-titulo="Controlshop">
+        <p class="estado">En progreso</p>
+        <p class="texto-principal">
+            Aplicación web para la gestión de inventario, productos, usuarios y ventas
+            de un negocio. Incluye módulos para registrar productos, controlar existencias,
+            gestionar ventas y consultar reportes, con una base de datos PostgreSQL.
+        </p>
+        <ul class="etiquetas">
+            <li>PHP</li>
+            <li>PostgreSQL</li>
+            <li>Supabase</li>
+            <li>HTML, CSS y JavaScript</li>
+            <li>Docker y Apache</li>
+            <li>Git y GitHub</li>
+            <li>Render</li>
+        </ul>
+        <p class="nota">Estoy adaptándolo para conectarlo a Supabase y publicarlo con Render. Aún no está desplegado.</p>
+        <a class="boton" href="https://github.com/Ivan2005345/Controlshop" target="_blank" rel="noopener">Ver repositorio</a>
+    </template>
+
     <template id="insignia-carrera" data-titulo="Ingeniería de Sistemas">
         <p class="estado">En progreso</p>
         <ul class="datos">
@@ -503,6 +537,7 @@
         <ul class="etiquetas">
             <li>Python</li>
             <li>Flask</li>
+            <li>PHP</li>
             <li>HTML, CSS y JavaScript</li>
             <li>Lógica de programación</li>
         </ul>
@@ -512,9 +547,9 @@
             <li>Un programa de consola para llevar un inventario.</li>
         </ul>
         <h4>Mis proyectos relacionados</h4>
-        <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
-        <!-- Cuando tengas uno real, reemplaza la línea anterior por:
-             <ul class="lista-simple"><li><a href="https://github.com/...">Nombre</a></li></ul> -->
+        <ul class="lista-simple">
+            <li><a href="https://github.com/Ivan2005345/Controlshop" target="_blank" rel="noopener">Controlshop</a> · sistema web de inventario y ventas (en progreso)</li>
+        </ul>
     </template>
 
     <template id="interes-datos">
@@ -529,6 +564,7 @@
             <li>Modelo relacional</li>
             <li>Diseño de tablas</li>
             <li>Consultas básicas en SQL</li>
+            <li>PostgreSQL y Supabase</li>
         </ul>
         <h4>Ideas de proyectos que podría desarrollar</h4>
         <ul class="lista-simple">
@@ -536,7 +572,9 @@
             <li>Un registro de inventario con consultas básicas.</li>
         </ul>
         <h4>Mis proyectos relacionados</h4>
-        <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
+        <ul class="lista-simple">
+            <li><a href="https://github.com/Ivan2005345/Controlshop" target="_blank" rel="noopener">Controlshop</a> · usa PostgreSQL con Supabase (en progreso)</li>
+        </ul>
     </template>
 
     <template id="interes-seguridad">
