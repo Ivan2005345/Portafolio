@@ -1,4 +1,3 @@
-/* ============ VARIABLES DE COLOR ============ */
 :root {
     --morado: #8B5CF6;
     --azul: #60A5FA;
@@ -10,7 +9,6 @@
     --fondo-tarjeta: #172033;
 }
 
-/* ============ BASE ============ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,7 +46,6 @@ code {
     color: var(--lavanda);
 }
 
-/* ============ ACCESIBILIDAD: SALTAR AL CONTENIDO ============ */
 .saltar {
     position: absolute;
     left: 16px;
@@ -66,7 +63,6 @@ code {
     top: 12px;
 }
 
-/* ============ PORTADA ============ */
 .portada {
     position: relative;
     min-height: 100vh;
@@ -81,7 +77,6 @@ code {
         var(--fondo);
 }
 
-/* Línea luminosa que une la portada con la primera sección */
 .portada::after {
     content: "";
     position: absolute;
@@ -100,16 +95,21 @@ code {
     width: 96px;
     height: 96px;
     margin: 0 auto 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--lavanda);
+    overflow: hidden;
     background: rgba(139, 92, 246, 0.12);
     border: 1px solid rgba(139, 92, 246, 0.45);
     border-radius: 50%;
     box-shadow: 0 0 32px rgba(139, 92, 246, 0.25);
+}
+
+.portada-avatar img {
+    display: block;
+    width: 96px;
+    height: 96px;
+    max-width: none;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
 }
 
 .portada h1 {
@@ -130,7 +130,6 @@ code {
     margin-bottom: 32px;
 }
 
-/* ============ SECCIONES, NÚMEROS Y DIVISORES ============ */
 .contenedor {
     max-width: 1000px;
     margin: 0 auto;
@@ -142,7 +141,6 @@ code {
     isolation: isolate;
 }
 
-/* Brillo suave de fondo, alternando lados */
 .seccion::before {
     content: "";
     position: absolute;
@@ -213,8 +211,6 @@ code {
     box-shadow: 0 0 14px 3px rgba(139, 92, 246, 0.55);
 }
 
-/* ============ ANIMACIÓN AL APARECER ============
-   Solo se oculta si el JavaScript está activo (clase "js" en <html>) */
 .js .revelar {
     opacity: 0;
     transform: translateY(18px);
@@ -226,7 +222,6 @@ code {
     transform: none;
 }
 
-/* ============ REJILLA DE TARJETAS ============ */
 .rejilla {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -298,7 +293,6 @@ code {
     transform: scale(0.98);
 }
 
-/* ============ INSIGNIAS ============ */
 .grupo-titulo {
     display: flex;
     align-items: center;
@@ -412,7 +406,6 @@ code {
     outline-offset: 3px;
 }
 
-/* ============ INTERESES ============ */
 .intereses-selector {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -530,7 +523,6 @@ code {
     color: var(--azul);
 }
 
-/* ============ TARJETA DE IDENTIDAD ============ */
 .id-card {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -555,11 +547,22 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--lavanda);
     background: rgba(139, 92, 246, 0.15);
     border: 1px solid rgba(139, 92, 246, 0.6);
+    border-radius: 50%;
+}
+
+.id-avatar img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    max-width: none;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
 }
 
@@ -661,7 +664,6 @@ code {
     text-align: center;
 }
 
-/* ============ HOJA DE VIDA ============ */
 .cv-caja {
     padding: 32px;
     text-align: center;
@@ -677,7 +679,6 @@ code {
     gap: 12px;
 }
 
-/* ============ PIE ============ */
 .pie {
     position: relative;
     margin-top: 96px;
@@ -697,7 +698,6 @@ code {
     background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.5), transparent);
 }
 
-/* ============ CONTENIDO DE LAS VENTANAS ============ */
 .texto-principal {
     margin-bottom: 20px;
 }
@@ -834,7 +834,6 @@ code {
     margin: 12px 0;
 }
 
-/* ============ BOTONES ============ */
 .boton {
     display: inline-block;
     font: inherit;
@@ -876,7 +875,6 @@ code {
     pointer-events: none;
 }
 
-/* ============ VENTANA MODAL ============ */
 .modal {
     position: fixed;
     inset: 0;
@@ -968,7 +966,6 @@ body.modal-abierto {
     overflow: hidden;
 }
 
-/* Visor de certificados y de la hoja de vida */
 .visor {
     margin-top: 20px;
 }
@@ -1000,7 +997,6 @@ body.modal-abierto {
     border-radius: 10px;
 }
 
-/* ============ ADAPTACIÓN A TABLETA Y CELULAR ============ */
 @media (max-width: 800px) {
     .intereses-selector {
         grid-template-columns: 1fr;
@@ -1057,7 +1053,6 @@ body.modal-abierto {
     }
 }
 
-/* ============ REDUCIR ANIMACIONES SI EL SISTEMA LO PIDE ============ */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

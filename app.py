@@ -17,7 +17,7 @@ app = Flask(__name__)
 # URL pública de tu portafolio, cuando lo publiques. Ejemplo:
 # URL_PUBLICA = "https://mi-portafolio.onrender.com"
 # Déjala vacía mientras no esté publicado.
-URL_PUBLICA = ""
+URL_PUBLICA = "https://portafolio-m4cs.onrender.com"
 
 # Nombre del PDF de tu hoja de vida dentro de static/docs/
 ARCHIVO_CV = "hoja de vida_Jhornan Ivan Uscategui Rico.pdf"

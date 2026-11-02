@@ -12,10 +12,9 @@
 
     <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-    <!-- ============ PORTADA ============ -->
     <section class="portada" id="inicio">
         <div class="portada-contenido">
-            <div class="portada-avatar" aria-hidden="true">JU</div>
+            <div class="portada-avatar"><img src="{{ url_for('static', filename='img/fotoperfil.jpeg') }}" alt="Foto de Jhorman Ivan Uscategui Rico" width="96" height="96"></div>
             <p class="etiqueta">Portafolio personal</p>
             <h1>Jhorman Ivan Uscategui Rico</h1>
             <p class="portada-rol">Estudiante de Ingeniería de Sistemas</p>
@@ -29,7 +28,6 @@
 
     <main class="contenedor" id="contenido">
 
-        <!-- ============ 01 · EXPLORA ============ -->
         <section class="seccion" id="explorar" aria-labelledby="t-explorar">
             <header class="seccion-cabecera revelar">
                 <span class="numero" aria-hidden="true">01</span>
@@ -94,7 +92,6 @@
 
         <div class="divisor" aria-hidden="true"></div>
 
-        <!-- ============ 02 · INSIGNIAS ============ -->
         <section class="seccion" id="logros" aria-labelledby="t-logros">
             <header class="seccion-cabecera revelar">
                 <span class="numero" aria-hidden="true">02</span>
@@ -132,17 +129,6 @@
                 <h3 class="grupo-titulo"><span class="punto-tipo tipo-proyecto"></span>Proyectos completados</h3>
                 <div class="insignias">
                     <div class="insignia-vacia">Aún no hay proyectos completados. Próximamente.</div>
-                    <!--
-                    CUANDO UN PROYECTO ESTÉ TERMINADO:
-                    1) Reemplaza el <div class="insignia-vacia"> de arriba por un botón como este.
-                    2) Muévelo desde "En progreso" y cambia tipo-progreso por tipo-proyecto.
-
-                    <button type="button" class="insignia tipo-proyecto" data-seccion="insignia-miproyecto">
-                        <span class="insignia-icono">(svg)</span>
-                        <span class="insignia-titulo">Nombre del proyecto</span>
-                        <span class="insignia-meta">Tecnologías</span>
-                    </button>
-                    -->
                 </div>
 
                 <h3 class="grupo-titulo"><span class="punto-tipo tipo-progreso"></span>En progreso</h3>
@@ -181,7 +167,6 @@
 
         <div class="divisor" aria-hidden="true"></div>
 
-        <!-- ============ 03 · INTERESES ============ -->
         <section class="seccion" id="intereses" aria-labelledby="t-intereses">
             <header class="seccion-cabecera revelar">
                 <span class="numero" aria-hidden="true">03</span>
@@ -226,7 +211,6 @@
 
         <div class="divisor" aria-hidden="true"></div>
 
-        <!-- ============ 04 · IDENTIDAD DIGITAL ============ -->
         <section class="seccion" id="identidad" aria-labelledby="t-identidad">
             <header class="seccion-cabecera revelar">
                 <span class="numero" aria-hidden="true">04</span>
@@ -239,7 +223,7 @@
             <div class="revelar">
                 <article class="id-card" aria-label="Tarjeta de identidad digital">
                     <div class="id-principal">
-                        <div class="id-avatar" id="id-iniciales">JU</div>
+                        <div class="id-avatar" id="id-iniciales"><img src="{{ url_for('static', filename='img/fotoperfil.jpeg') }}" alt="Foto de Jhorman Ivan Uscategui Rico" width="64" height="64"></div>
                         <p class="id-etiqueta">Identidad digital</p>
                         <h3 id="id-nombre">Jhorman Ivan Uscategui Rico</h3>
                         <p class="id-carrera" id="id-carrera">Ingeniería de Sistemas</p>
@@ -281,7 +265,6 @@
 
         <div class="divisor" aria-hidden="true"></div>
 
-        <!-- ============ 05 · HOJA DE VIDA ============ -->
         <section class="seccion" id="cv" aria-labelledby="t-cv">
             <header class="seccion-cabecera revelar">
                 <span class="numero" aria-hidden="true">05</span>
@@ -300,7 +283,6 @@
                            download="Hoja-de-vida-Jhorman-Uscategui.pdf">Descargar PDF</a>
                     </div>
                 {% else %}
-                    <!-- El PDF aún no está: guárdalo como static/docs/hoja-de-vida.pdf y recarga -->
                     <div class="cv-acciones">
                         <button type="button" class="boton" disabled>Ver hoja de vida</button>
                         <button type="button" class="boton boton-secundario" disabled>Descargar PDF</button>
@@ -315,12 +297,6 @@
         </footer>
 
     </main>
-
-
-    <!-- ============================================================
-         CONTENIDO DE LAS VENTANAS MODALES
-         Cada <template> tiene un id que coincide con data-seccion
-         ============================================================ -->
 
     <template id="sobre-mi" data-titulo="Sobre mí">
         <p class="texto-principal">
@@ -375,7 +351,6 @@
             <h3>Fundamentos de la Ciberseguridad</h3>
             <p>Google · Coursera</p>
             <p class="detalle">Finalización: junio de 2025</p>
-            <!-- data-archivo: nombre del archivo dentro de static/docs/ -->
             <button type="button" class="boton" data-archivo="certificado.jpeg">
                 Ver certificado
             </button>
@@ -451,8 +426,6 @@
         <a class="boton" href="mailto:jhormanrico14@gmail.com">Escribirme un correo</a>
     </template>
 
-    <!-- ---------- Insignias ---------- -->
-
     <template id="insignia-ciberseguridad" data-titulo="Fundamentos de la Ciberseguridad">
         <div class="certificado">
             <p class="texto-principal">
@@ -460,7 +433,6 @@
             </p>
             <ul class="datos">
                 <li><strong>Tipo:</strong> Certificado obtenido</li>
-                <!-- Confirma la entidad exacta que aparece en tu certificado original -->
                 <li><strong>Entidad:</strong> Google · Coursera</li>
                 <li><strong>Finalización:</strong> junio de 2025</li>
             </ul>
@@ -523,8 +495,6 @@
             <li>JavaScript</li>
         </ul>
     </template>
-
-    <!-- ---------- Intereses ---------- -->
 
     <template id="interes-software">
         <h3>Desarrollo de software</h3>
@@ -599,9 +569,8 @@
         <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
     </template>
 
-        <!-- ---------- Hoja de vida (solo si el PDF existe) ---------- -->
     {% if cv_disponible %}
-    <template id="cv-vista" data-titulo="hoja de vida_Jhornan Ivan Uscategui Rico">
+    <template id="cv-vista" data-titulo="Hoja de vida">
         <div class="visor">
             <iframe src="{{ url_for('static', filename='docs/' + archivo_cv) }}" title="Vista previa de la hoja de vida"></iframe>
         </div>
@@ -610,7 +579,6 @@
     </template>
     {% endif %}
 
-    <!-- ============ VENTANA MODAL (la llena el JavaScript) ============ -->
     <div class="modal" id="modal" aria-hidden="true">
         <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
             <div class="modal-cabecera">
