@@ -599,9 +599,9 @@
         <p class="nota">Aún no tengo proyectos publicados en esta área. Próximamente.</p>
     </template>
 
-    <!-- ---------- Hoja de vida (solo si el PDF existe) ---------- -->
+        <!-- ---------- Hoja de vida (solo si el PDF existe) ---------- -->
     {% if cv_disponible %}
-    <template id="cv-vista" data-titulo="Hoja de vida">
+    <template id="cv-vista" data-titulo="hoja de vida_Jhornan Ivan Uscategui Rico">
         <div class="visor">
             <iframe src="{{ url_for('static', filename='docs/' + archivo_cv) }}" title="Vista previa de la hoja de vida"></iframe>
         </div>
